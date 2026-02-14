@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix WiFi Connected But No Internet - TechFix Center</title>
+    <meta name="description" content="Connected to WiFi but can't load pages? Flush your DNS and reset IP settings with these commands. - TechFix Center">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://techfixcenter.com/wifi-connected-no-internet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="index.html">TechFix Center</a></div>
+            <nav class="nav-buttons">
+                <a href="how-to-guides.html" class="btn-nav btn-nav-secondary">How-To Guides</a>
+                <a href="error-codes.html" class="btn-nav btn-nav-secondary">Error Codes</a>
+                <a href="iphone-hub.html" class="btn-nav btn-nav-primary">iPhone Fixes</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> &gt; <a href="device-problems.html">Device Problems</a> &gt; Network
+                </div>
+
+                <h1 class="article-title">WiFi Connected But No Internet</h1>
+                <div class="meta">Updated Feb 13, 2026</div>
+
+                <div class="ad-slot ad-top">Advertisement</div>
+
+                <p class="intro"><strong>The Problem:</strong> Your WiFi icon is active, but web pages won't load. You
+                    might see a yellow triangle or "No Internet Access."</p>
+                <p><strong>The Short Answer:</strong> Your computer has a valid connection to the router, but the router
+                    isn't talking to the internet (or your DNS settings are stuck).</p>
+
+                <div class="toc">
+                    <h3>Quick Fixes</h3>
+                    <ul>
+                        <li><a href="#sol1">Method 1: Restart Modem (The Golden Rule)</a></li>
+                        <li><a href="#sol2">Method 2: Flush DNS (CMD Fix)</a></li>
+                        <li><a href="#sol3">Method 3: Forget Network</a></li>
+                    </ul>
+                </div>
+
+                <h2 id="sol1">Method 1: Restart Modem</h2>
+                <p>Before touching your PC, restart the main internet source.</p>
+                <ol>
+                    <li>Unplug the power cable from your modem/router.</li>
+                    <li>Wait 60 full seconds (this drains the capacitors).</li>
+                    <li>Plug it back in and wait 3 minutes for it to boot.</li>
+                </ol>
+
+                <div class="ad-slot ad-content">Advertisement</div>
+
+                <h2 id="sol2">Method 2: Flush DNS</h2>
+                <p>If other devices work but yours doesn't, this command usually fixes it.</p>
+                <ol>
+                    <li>Open <strong>Command Prompt</strong> as Administrator.</li>
+                    <li>Type <code>ipconfig /flushdns</code> and press Enter.</li>
+                    <li>Type <code>ipconfig /release</code> and press Enter.</li>
+                    <li>Type <code>ipconfig /renew</code> and press Enter.</li>
+                </ol>
+
+                <h2 id="sol3">Method 3: Forget Network</h2>
+                <p>Sometimes the saved password or profile gets corrupted.</p>
+                <ul>
+                    <li>Go to <strong>Settings > Network & Internet > WiFi</strong>.</li>
+                    <li>Select <strong>Manage known networks</strong>.</li>
+                    <li>Click your WiFi name and select <strong>Forget</strong>.</li>
+                    <li>Reconnect and enter your password again.</li>
+                </ul>
+
+                <div class="ad-slot ad-content">Advertisement</div>
+
+            </article>
+
+            <aside class="related-posts">
+                <h3>Related Fixes</h3>
+                <ul class="related-list">
+                    <li><a href="fix-http-error-404.html">Fix HTTP Error 404 (Web Page Issues)</a></li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TechFix Center. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a
+                    href="sitemap.xml">Sitemap</a></p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

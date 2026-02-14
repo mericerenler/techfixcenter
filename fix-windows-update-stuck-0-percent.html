@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Update Stuck at 0 Percent (Fix It Now) - TechFix Center</title>
+    <meta name="description" content="Windows Update downloading stuck at 0%? Initializing stuck? Force restart the Windows Update service and clear the SoftwareDistribution folder to fix it. - TechFix Center">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://techfixcenter.com/fix-windows-update-stuck-0-percent.html">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="index.html">TechFix Center</a></div>
+            <nav class="nav-buttons">
+                <a href="how-to-guides.html" class="btn-nav btn-nav-secondary">How-To Guides</a>
+                <a href="error-codes.html" class="btn-nav btn-nav-secondary">Error Codes</a>
+                <a href="iphone-hub.html" class="btn-nav btn-nav-primary">iPhone Fixes</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> &gt; <a href="how-to-guides.html">How-To & PC</a> &gt; Update Issues
+                </div>
+
+                <h1 class="article-title">Windows Update Stuck at 0 Percent (Fix It Now)</h1>
+                <div class="meta">Updated Feb 13, 2026</div>
+
+                <!-- Immediate Fix Section -->
+                <section class="immediate-fix"
+                    style="background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin-bottom: 20px;">
+                    <h3 style="margin-top: 0; color: #856404;">⚠️ Immediate Fix</h3>
+                    <p style="font-weight: bold; margin-bottom: 0;">Update stuck at 0% or "Pending"? The update service
+                        has hung. You must restart the service. Open "Services.msc", right-click "Windows Update", and
+                        select "Restart". If it stays stuck, you need to delete the specific cache folder
+                        `C:\Windows\SoftwareDistribution`.</p>
+                </section>
+
+                <!-- Ad Placeholder: Top -->
+                <div class="ad-slot ad-top">Advertisement</div>
+
+                <h2>Why This Happens</h2>
+                <ul>
+                    <li><strong>Corrupt Cache:</strong> Partial download files.</li>
+                    <li><strong>Service Hang:</strong> Update agent not responding.</li>
+                    <li><strong>Disk Space:</strong> Not enough room to unpack.</li>
+                </ul>
+
+                <h2>Step-by-Step Fix</h2>
+                <ol>
+                    <li><strong>Stop Services:</strong> Open CMD as Admin. Type `net stop wuauserv` and `net stop bits`.
+                    </li>
+                    <li><strong>Delete Cache:</strong> Navigate to `C:\Windows\SoftwareDistribution`. Delete EVERYTHING
+                        in this folder. (It is safe, these are just temp download files).</li>
+                    <li><strong>Restart Services:</strong> In CMD, type `net start wuauserv` and `net start bits`.</li>
+                    <li><strong>Check Again:</strong> Go back to Settings > Update & Security > Check for Updates. It
+                        will re-download fresh.</li>
+                </ol>
+
+                <!-- Ad Placeholder: Content -->
+                <div class="ad-slot ad-content">Advertisement</div>
+
+                <hr>
+                <div class="related-fixes">
+                    <h3>Related Fixes</h3>
+                    <ul>
+                        <li><a href="fix-windows-update-error-0x80070057.html">Error 0x80070057 Fix</a></li>
+                        <li><a href="fix-windows-blue-screen-after-update.html">Blue Screen After Update? Fix Here</a>
+                        </li>
+                        <li><a href="fix-windows-automatic-repair-loop.html">Stuck in Repair Loop? Fix Here</a></li>
+                    </ul>
+                </div>
+
+                <h2>When to Stop</h2>
+                <p>If updates essentially never work, your OS might be too damaged. Use the "Windows Media Creation
+                    Tool" to perform an "In-Place Upgrade". This reinstalls Windows over itself, keeping your files but
+                    replacing all system files with fresh ones.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TechFix Center. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy</a> | <a href="contact.html">Contact</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+/* 
+   Minimalist SEO Website Styles
+   Goal: Maximum speed, readability, and ad friendliness.
+   "Boring but Trustworthy"
+*/
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --text-light: #555555;
+    --accent-color: #0056b3;
+    /* Soft trust blue */
+    --accent-hover: #004494;
+    --border-color: #e0e0e0;
+    --ad-bg: #f9f9f9;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 18px;
+    /* Large readable text */
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--accent-hover);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    /* Optimal reading width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.site-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* Components: Ad Placeholders */
+.ad-slot {
+    background-color: var(--ad-bg);
+    border: 1px dashed #ccc;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Specific Sizes for minimal layout shift */
+.ad-top {
+    width: 100%;
+    height: 90px;
+    max-width: 728px;
+}
+
+/* Leaderboard */
+.ad-content {
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+}
+
+/* Rectangle */
+
+/* Typography & Content */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: #111;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 30px 0 15px;
+    color: #111;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 25px 0 10px;
+}
+
+p,
+li {
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.breadcrumbs a {
+    color: var(--text-light);
+}
+
+/* Internal Linking Section */
+.related-posts {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.related-posts h3 {
+    margin-top: 0;
+}
+
+.related-list {
+    list-style: none;
+    padding: 0;
+}
+
+.related-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+footer a {
+    margin: 0 10px;
+    color: var(--text-light);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .ad-top {
+        height: 100px;
+    }
+
+    /* Mobile banner height */
+}
+
+/* Button Nav Styles */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-nav {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-nav-primary {
+    background-color: var(--accent-color);
+    color: white !important;
+    border: 2px solid var(--accent-color);
+}
+
+.btn-nav-primary:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+.btn-nav-secondary {
+    background-color: transparent;
+    color: var(--text-color) !important;
+    border: 2px solid #ddd;
+}
+
+.btn-nav-secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+@media (max-width: 600px) {
+    .nav-buttons {
+        flex-wrap: wrap;
+    }
+
+    .btn-nav {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}/* Callout Boxes for Text-Only Instructions */
+.callout-box {
+    padding: 15px;
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.callout-critical {
+    background-color: #fffde7;
+    border-left: 5px solid #fbc02d;
+    color: #333;
+}
+
+.callout-important {
+    background-color: #e1f5fe;
+    border-left: 5px solid #0288d1;
+    color: #01579b;
+}
+
+.callout-tip {
+    background-color: #e8f5e9;
+    border-left: 5px solid #388e3c;
+    color: #1b5e20;
+}
+
+.callout-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Automatic Repair Loop (Fix It Now) - TechFix Center</title>
+    <meta name="description" content="Windows stuck on 'Preparing Automatic Repair' loop? PC won't boot? Fix the boot loop instantly with these Command Prompt repairs. No format needed. - TechFix Center">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://techfixcenter.com/fix-windows-automatic-repair-loop.html">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="index.html">TechFix Center</a></div>
+            <nav class="nav-buttons">
+                <a href="how-to-guides.html" class="btn-nav btn-nav-secondary">How-To Guides</a>
+                <a href="error-codes.html" class="btn-nav btn-nav-secondary">Error Codes</a>
+                <a href="iphone-hub.html" class="btn-nav btn-nav-primary">iPhone Fixes</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> &gt; <a href="how-to-guides.html">How-To & PC</a> &gt; Boot Issues
+                </div>
+
+                <h1 class="article-title">Windows Automatic Repair Loop (Fix It Now)</h1>
+                <div class="meta">Updated Feb 13, 2026</div>
+
+                <!-- Immediate Fix Section -->
+                <section class="immediate-fix"
+                    style="background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin-bottom: 20px;">
+                    <h3 style="margin-top: 0; color: #856404;">⚠️ Immediate Fix</h3>
+                    <p style="font-weight: bold; margin-bottom: 0;">Stuck on "Preparing Automatic Repair" loop? Detailed
+                        repair rarely works. You must force the PC to safe mode or command prompt. Interrupt the boot 3
+                        times by holding the power button. Once in the Blue Menu (WinRE), choose <strong>Troubleshoot >
+                            Advanced > Command Prompt</strong> and run `chkdsk /f /r c:` to repair the disk corruptions.
+                    </p>
+                </section>
+
+                <!-- Ad Placeholder: Top -->
+                <div class="ad-slot ad-top">Advertisement</div>
+
+                <h2>Why This Happens</h2>
+                <ul>
+                    <li><strong>Corrupt MBR:</strong> Master Boot Record is damaged.</li>
+                    <li><strong>Bad Shutdown:</strong> Power loss during write.</li>
+                    <li><strong>Failed Update:</strong> Windows Update broke the bootloader.</li>
+                </ul>
+
+                <h2>Step-by-Step Fix</h2>
+                <ol>
+                    <li><strong>Enter WinRE:</strong> Turn PC on. As soon as logo appears, hold Power to kill it. Repeat
+                        3 times. The 4th time, it will enter "Automatic Repair" recovery menu.</li>
+                    <li><strong>Command Prompt:</strong> Select <strong>Advanced Options > Troubleshoot > Advanced
+                            Options > Command Prompt</strong>.</li>
+                    <li><strong>Fix Boot Files:</strong> Type `bootrec /fixmbr` and press Enter. Then type `bootrec
+                        /rebuildbcd` and press Enter.</li>
+                    <li><strong>System Restore:</strong> If that fails, go back to Advanced Options and choose
+                        <strong>System Restore</strong>. Pick a date before the loop started.</li>
+                </ol>
+
+                <!-- Ad Placeholder: Content -->
+                <div class="ad-slot ad-content">Advertisement</div>
+
+                <hr>
+                <div class="related-fixes">
+                    <h3>Related Fixes</h3>
+                    <ul>
+                        <li><a href="fix-windows-black-screen-after-login.html">Black Screen After Login? Fix Here</a>
+                        </li>
+                        <li><a href="fix-windows-cant-reset-pc.html">Can't Reset This PC? Fix Here</a></li>
+                        <li><a href="fix-blue-screen-critical-process-died.html">Critical Process Died Blue Screen
+                                Fix</a></li>
+                    </ul>
+                </div>
+
+                <h2>When to Stop</h2>
+                <p>If the hard drive makes clicking noises or the BIOS says "No Boot Device", your SSD/HDD has
+                    physically failed. No command will fix a dead drive. You need to replace the drive and reinstall
+                    Windows.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TechFix Center. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy</a> | <a href="contact.html">Contact</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

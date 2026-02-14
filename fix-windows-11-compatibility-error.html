@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Windows 11 'This PC Can't Run Windows 11' Error - TechFix Center</title>
+    <meta name="description" content="Trying to install Windows 11 but getting the compatibility error? Here is how to enable TPM 2.0 and Secure Boot. - TechFix Center">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://techfixcenter.com/fix-windows-11-compatibility-error">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="site-title"><a href="index.html">TechFix Center</a></div>
+            <nav class="nav-buttons">
+                <a href="how-to-guides.html" class="btn-nav btn-nav-secondary">How-To Guides</a>
+                <a href="error-codes.html" class="btn-nav btn-nav-secondary">Error Codes</a>
+                <a href="iphone-hub.html" class="btn-nav btn-nav-primary">iPhone Fixes</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> &gt; <a href="how-to-guides.html">How-To Guides</a> &gt; Windows
+                </div>
+
+                <h1 class="article-title">Fix 'This PC Can't Run Windows 11' Error</h1>
+                <div class="meta">Updated Feb 13, 2026</div>
+
+                <div class="ad-slot ad-top">Advertisement</div>
+
+                <p class="intro"><strong>The Problem:</strong> You are trying to install Windows 11, but the setup
+                    screen stops you with a vague compatibility error. This is frustrating because your PC is likely
+                    powerful enough to run it.</p>
+                <p><strong>The Short Answer:</strong> Microsoft requires a security chip called TPM 2.0 to be active.
+                    You do not need to buy new hardware. You simply need to turn this setting on in your BIOS.</p>
+
+                <div class="toc">
+                    <h3>Quick Fixes</h3>
+                    <ul>
+                        <li><a href="#sol1">Step 1: Enter BIOS</a></li>
+                        <li><a href="#sol2">Step 2: Enable TPM 2.0</a></li>
+                        <li><a href="#sol3">Step 3: Enable Secure Boot</a></li>
+                    </ul>
+                </div>
+
+                <h2 id="sol1">Step 1: Enter BIOS</h2>
+                <p>To change these settings, you must restart your computer and enter the BIOS menu before Windows
+                    loads.</p>
+
+                <div class="callout-box callout-critical">
+                    <span class="callout-title">CRITICAL TIMING</span>
+                    You must tap the BIOS key (<strong>F2, Del, or F12</strong>) immediately after restarting. If you
+                    see the spinning Windows logo, you missed the window. Restart and try tapping faster.
+                </div>
+
+                <ul>
+                    <li>Restart your PC.</li>
+                    <li>Immediately tap the BIOS key repeatedly.</li>
+                </ul>
+
+                <div class="ad-slot ad-content">Advertisement</div>
+
+                <h2 id="sol2">Step 2: Enable TPM 2.0</h2>
+                <p>Navigate to the <strong>Security</strong> or <strong>Advanced</strong> tab using your arrow keys.</p>
+
+                <div class="callout-box callout-important">
+                    <span class="callout-title">IMPORTANT NOTE</span>
+                    Different brands name this differently. Look for "<strong>Intel PTT</strong>" or "<strong>AMD
+                        fTPM</strong>". They are the same thing as TPM 2.0.
+                </div>
+
+                <ul>
+                    <li>Find <strong>Intel PTT</strong> or <strong>AMD fTPM</strong>.</li>
+                    <li>Change it to <strong>Enabled</strong>.</li>
+                    <li>This satisfies the security requirement.</li>
+                </ul>
+
+                <h2 id="sol3">Step 3: Enable Secure Boot</h2>
+                <p>Navigate to the <strong>Boot</strong> tab.</p>
+
+                <div class="callout-box callout-tip">
+                    <span class="callout-title">PRO TIP</span>
+                    If Secure Boot is grayed out, find "<strong>CSM Support</strong>" and disable it first. Save and
+                    restart, then Secure Boot will be clickable.
+                </div>
+
+                <ul>
+                    <li>Find <strong>Secure Boot</strong>.</li>
+                    <li>Change it to <strong>Enabled</strong>.</li>
+                    <li>Press <strong>F10</strong> to Save & Exit.</li>
+                </ul>
+
+                <p>Once you restart, try the Windows 11 installer again. It should work perfectly.</p>
+
+                <div class="ad-slot ad-content">Advertisement</div>
+
+                <h3>Still Not Fixed?</h3>
+                <p>If you still get the error, download the <strong>PC Health Check app</strong> from Microsoft to
+                    identify exactly which part of your hardware is flagged.</p>
+
+            </article>
+
+            <aside class="related-posts">
+                <h3>Related Fixes</h3>
+                <ul class="related-list">
+                    <li><a href="fix-windows-update-error-0x80070057.html">Fix Windows Update Error 0x80070057</a></li>
+                    <li><a href="fix-no-bootable-device-acer.html">Fix 'No Bootable Device' on Acer</a></li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TechFix Center. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a
+                    href="sitemap.xml">Sitemap</a></p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
